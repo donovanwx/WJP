@@ -619,10 +619,24 @@ h3 {
 }
 
 @media (max-width: 760px) {
-  .top-bar,
+  .top-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 8px 18px;
+    line-height: 1.35;
+  }
+
+  .top-bar > span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .top-links {
-    flex-direction: column;
-    gap: 6px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 18px;
   }
 
   .brand {
@@ -681,10 +695,24 @@ h3 {
 }
 /* Mobile refinement */
 @media (max-width: 760px) {
-  .top-bar,
+  .top-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 8px 18px;
+    line-height: 1.35;
+  }
+
+  .top-bar > span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .top-links {
-    flex-direction: column;
-    gap: 6px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 18px;
   }
 
   .main-nav {
@@ -800,7 +828,12 @@ h3 {
 
 @media (max-width: 460px) {
   .top-bar {
-    display: none;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .top-links {
+    gap: 16px;
   }
 
   .main-nav {
