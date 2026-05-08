@@ -679,3 +679,174 @@ h3 {
     display: none;
   }
 }
+/* Mobile refinement */
+@media (max-width: 760px) {
+  .top-bar,
+  .top-links {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .main-nav {
+    gap: 14px;
+  }
+
+  .brand {
+    width: 100%;
+    min-width: 0;
+    align-items: flex-start;
+  }
+
+  .brand-logo {
+    width: 184px;
+    height: 46px;
+  }
+
+  .brand-text strong {
+    font-size: 16px;
+  }
+
+  .brand-text em {
+    max-width: 210px;
+    font-size: 9px;
+    line-height: 1.35;
+  }
+
+  .nav-links {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    flex: 0 0 auto;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 38px 18px 72px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .hero-media img {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .hero-actions,
+  .search-panel {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .button,
+  .search-panel button {
+    width: 100%;
+  }
+
+  .quick-selection,
+  .solution-grid,
+  .application-grid,
+  .stats-grid,
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-selection {
+    width: calc(100% - 24px);
+    margin-top: -28px;
+    padding: 22px 18px;
+  }
+
+  .section,
+  .contact-section {
+    padding: 56px 18px;
+  }
+
+  .solution-grid article,
+  .application-grid article {
+    min-height: auto;
+  }
+
+  .news-list article {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .floating-service {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .top-bar {
+    display: none;
+  }
+
+  .main-nav {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-logo {
+    width: 150px;
+    height: 37px;
+  }
+
+  .brand-text strong {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  .brand-text em {
+    display: none;
+  }
+
+  .hero {
+    padding: 34px 14px 64px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .quick-selection {
+    width: calc(100% - 16px);
+    margin-top: -22px;
+  }
+
+  .quote-form,
+  .solution-grid article,
+  .application-grid article,
+  .stats-grid div {
+    padding: 22px 18px;
+  }
+}
